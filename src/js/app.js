@@ -2,7 +2,7 @@ new WOW().init();
 
 
 // Checkbox thing
-(function() {
++function($) {
   var checkbox,
       toggle;
   checkbox = $('#terms');
@@ -19,4 +19,4 @@ new WOW().init();
       toggle.addClass('is-checked');
     }
   });
-})();
+}(jQuery);

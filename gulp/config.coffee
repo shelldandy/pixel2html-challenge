@@ -12,6 +12,11 @@ module.exports =
   uncssHtml : [
     './dist/index.html'
   ]
+  uncssIgnore : [
+    '.signup__form--checkbox--toggle.is-checked'
+    '.signup__form--checkbox--toggle.is-checked::before'
+    '.signup__form--checkbox--toggle.is-checked::after'
+  ]
   scriptFiles : [
     './src/bower_components/wow/dist/wow.js'
     './src/js/app.js'

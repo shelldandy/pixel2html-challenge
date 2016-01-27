@@ -19,6 +19,7 @@ gulp.task 'productionSass', ->
     )
   .pipe uncss(
     html : config.uncssHtml
+    ignore: config.uncssIgnore
   )
   .pipe csscomb()
   .pipe nano()
