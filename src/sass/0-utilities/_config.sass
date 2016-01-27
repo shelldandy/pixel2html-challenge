@@ -1,0 +1,69 @@
+// =======================================
+// =            Global Config            =
+// =======================================
+
+// Tipografía
+// Si vas a usar tipografías que no sean de Google descomenta esto y pon el de $font-url--google como null
+//@import "font_imports"
+$font-url--google       : "https://fonts.googleapis.com/css?family=Montserrat|Lato:300"
+$font-family--primary   : "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family--secondary : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+// Texto
+$base__font-size        : 14px
+$base__line             : 1.65
+$letter-space           : 1px
+
+// Modular Scale - https://github.com/modularscale/modularscale-sass/tree/3.x
+$ms-base:  em($base__font-size)
+$ms-ratio: $fourth
+
+
+// Pesos Tipográficos
+$font__weight--light    : 300
+$font__weight--regular  : 400
+
+// Colores Descriptivos
+$blanco                 : #ffffff
+$negro                  : #4a4a4a
+$gris                   : #EBECEC
+$gris-claro             : #fcfcfc
+$input-border           : #d9dadc
+$input-text             : #cdd0d4
+$checkbox-border        : #e6e9ed
+$checkbox-check         : #9299ac
+$checkbox-background    : #fbfbfd
+$subheading             : #8890a4
+$form-border            : #d4d8df
+// Colores Cosas
+$rojo                   : #a4262a
+$amarillo               : #d6c91f
+$verde                  : #68C522
+$azul                   : #389bff
+// Color Principal
+$don-mango              : #EC7024
+$color-primario         : $verde
+
+// Paleta de Colores
+@import "color-palletes"
+
+// Uso de Colores
+$color-secundario       : palette(primario, light)
+$color-acento           : invert($color-primario)
+$color-sombra           : rgba($negro, 0.2)
+
+// Colores UI
+@import "ui-colors"
+
+// Transiciones
+$trns-duration          : .3s
+
+// Camino a 'img'
+$path--img              : '../img'
+
+// Grid Variables powered by Chochini - Better FlexboxGrid
+$col-num: 12 !default
+$col-gutter: 0.5rem !default
+
+// Breakpoints para los media queries 🐶
+@import "breakpoints"

@@ -1,0 +1,40 @@
+.cont
+  .signup.wow.animated.fadeIn
+    .signup__start.wow.animated.fadeInDown
+      img.signup__logo(src='img/logo.svg', alt='Pixel2Html Logo')
+      .signup__title
+        h2.signup__title--heading Create new account
+        h6.signup__title--subheading Enter your credentials below
+
+    .signup__details.wow.animated.fadeInUp
+      form.signup__form(action='#')
+        .basis.signup__form--flex.fifty
+          label(for='name') Full name
+          input(id='name', type='text', placeholder='Name and surname')
+        .basis.signup__form--flex.forty
+          label(for='username') Username
+          input(type='text', id='username', placeholder='Username')
+        
+        label.basis(for='email') Email address
+        input.basis(type='email', id='email', placeholder='Email address')
+        
+        .basis.signup__form--flex.fifty
+          label(for='country') Country
+          input(type='text', id='country', placeholder='Country')
+        .basis.signup__form--flex.forty
+          label(for='city') City
+          input(type='text', id='city', placeholder='City')
+        
+        label.basis(for='password') Password
+        input.basis(type='password', id='password', placeholder='Password')
+        input.basis(type='password', id='repeat-pass', placeholder='Repeat password')
+        
+        .basis.fifty.signup__form--checkbox
+          .signup__form--checkbox--toggle
+          label.signup__form--checkbox--label(for='terms') I accept the <a href='#'>Terms & Conditions</a>
+            input(type='checkbox', id='terms')
+
+        input.basis.forty.signup__form--submit(type='submit', value='Create account')
+    
+    .signup__signin
+      p.signup__signin--text Have account already? <a href='#'>Sign in</a>
